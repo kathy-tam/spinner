@@ -1,3 +1,4 @@
+//Spinner 2: refactored version
 let spinners = ['|', '/', '-', '\\'];
 let delay = 100;
 for(let i = 0 ; i <= spinners.length ; i++) {
@@ -8,7 +9,7 @@ for(let i = 0 ; i <= spinners.length ; i++) {
 }
 setTimeout(() => process.stdout.write('\n'), delay);
 
-/*
+/* Spinner 1
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
