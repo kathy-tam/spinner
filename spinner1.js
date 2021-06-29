@@ -1,3 +1,14 @@
+let spinners = ['|', '/', '-', '\\'];
+let delay = 100;
+for(let i = 0 ; i <= spinners.length ; i++) {
+  if(i === spinners.length) { i = 0 }
+  setTimeout(() => process.stdout.write('\r' + spinners[i] + '   '), delay);
+  delay += 200;
+  if(delay === 1900) { break }
+}
+setTimeout(() => process.stdout.write('\n'), delay);
+
+/*
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
@@ -39,3 +50,4 @@ setTimeout(() => {
 setTimeout(() => {
   process.stdout.write('\n');
 }, 1900);
+*/
